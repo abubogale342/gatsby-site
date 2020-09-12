@@ -1,0 +1,343 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+.wrapper {
+    display: block;
+    width:100%;
+    align-items: stretch;
+    color:#000000;
+    background-color:#fbf3f3;
+    font-size: large;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fcfafa;
+  /* overflow-y: hidden; */
+}
+
+p {
+  font-family:'Times New Roman', Times, serif, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7em;
+  color: black;
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.App{
+  margin-top: 290px;
+  padding-left: 6px;
+}
+
+.tableWrapper{
+  max-height: 89vh;
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+  height: 89vh;
+}
+
+.answerWrapper{
+  margin-left: 9px;
+}
+
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.2), 0 3px 3px -2px rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+  overflow: hidden;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  color: #fff;
+  transition: all 0.3s;
+  width:100%;
+  margin: auto;
+  /* margin-left: 100px; */
+  top:0px;
+}
+
+#sidebar .sidebar-header {
+  /* padding: 8px; */
+  background: #fbf3f3; 
+  /* background: #1843A7; */
+  text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+#sidebar ul li a:hover {
+  color: #7386D5;
+  background: #fff;
+}
+
+#sidebar .sidebar-header h3{
+  text-align: center;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+}
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6d7fcc;
+}
+.fullheight{
+  height:100%;
+}
+
+
+
+.app {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #4a4a4d;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+tr {
+  overflow-x: scroll;
+}
+th,
+td {
+  padding: 15px 15px;
+  vertical-align: middle;
+  /* text-align: left; */
+}
+thead {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Lato;
+  border: 1px solid transparent;
+  width: 100%;
+  max-width: 100%;
+  font-weight: 900;
+  line-height: 24px;
+  mix-blend-mode: normal;
+
+  color: rgba(51, 51, 51, .5);
+  background: #629fd4;
+}
+thead tr th {
+  padding: 15px 15px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  background: #629fd4;
+
+
+  text-align: left;
+}
+tbody tr{
+  cursor: pointer;
+}
+tbody {
+  max-width: 100%;
+}
+tbody tr:nth-child(odd) {
+  background: #f0f0f2;
+}
+tbody tr:hover {
+  background: #f0f0f2;
+}
+td {
+  padding: 15px 15px;
+}
+td:first-child {
+}
+
+.answerTitle{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 17px;
+  border-bottom: 2px black solid;
+  position: fixed;
+  background: white;
+  z-index: 1;
+  margin-left: -6px;
+  max-height: 110px;
+  min-height: 62px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display: table; */
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+width: 100%;
+/* display: flex; */
+justify-content: center;
+align-items: center;
+}
+.answerList{
+  padding-top: 100px;
+}
+
+.answerTitleSpan{
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-top: 1px;
+    width: 100%;
+}
+
+.audioFile{
+  width: 60%;
+}
+
+@media screen and (max-width: 800px){
+.App{
+  margin-top: 102px;
+}
+
+.answerTitle{
+  width: 92%;
+}
+}
+@media screen and (max-width: 767px) {
+  .chartClass {
+    width: 90% !important;
+    float: none !important;
+    margin: 2% auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .peoplecount {
+  
+    
+  }
+}
+@media screen and (max-width: 798px) {
+  .peoplecountinside {
+    text-align: center;
+    margin-block-start: 1em !important;
+    margin-block-end: 0em !important;
+    margin-inline-end: 0em !important;
+    width:100% !important;
+    
+  }
+}
+@media screen and (max-width: 800px) {
+  #sidebar {
+    /* text-align: center; */
+    /* min-height: 13.5%; */
+    /* margin-left: 52px; */
+    
+    
+    
+  }
+}
+@media screen and (max-width: 800px) {
+  .sidebar-header {
+   float: none !important;
+   /* padding-top: 9px !important; */
+    
+    
+  }
+  #sidebar .sidebar-header{
+    /* padding-left: 72px; */
+  }
+}
+@media screen and (max-width: 800px) {
+  #sidebar .sidebar-header{
+   /* text-align:left; */
+    /* padding-left: 72px; */
+  }
+}
+@media screen and (max-width: 484px) {
+.sidebar-header h3{
+  font-size: 30px;
+  margin-bottom: 0rem;
+}
+.peoplecountinside {
+  margin-block-start: 0.2em !important;
+}
+.App{
+  margin-top: 70px;
+}
+
+.vorailLogo{
+  max-height:9vh;
+  min-height:9vh;
+  margin-top: 20px;
+}
+
+#sidebar{
+  max-height: 9vh;
+}
+
+.audioFile{
+  width: 75%;
+}
+}
+
+.sideList{
+  display: inline-block;
+  color: black;
+  float: right;
+  height: 100%;
+  vertical-align: middle;
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  /* bottom: 50%; */
+  /* top: 50%; */
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+li{
+  list-style-type: none;
+}
+
+.pageTitle{
+  font-size: 3.4rem;
+}
+
+.titleWrapper{
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+  @media screen and (max-width: 798px) {
+    .main-wrapper {
+    
+    padding-top:104px !important;
+      
+    }
+  }
+ 
